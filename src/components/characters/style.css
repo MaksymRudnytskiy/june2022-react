@@ -1,0 +1,7 @@
+.character{
+    display: flex;
+    flex-direction: column;
+    border: 50px;
+    align-items: center;
+    background: darkgray;
+}
