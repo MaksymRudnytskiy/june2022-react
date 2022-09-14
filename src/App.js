@@ -1,25 +1,63 @@
-import logo from './logo.svg';
 import './App.css';
+import SimpsonComp from "./components/simpsonComp";
+
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+    return (
+        <div className="App">
+            <SimpsonComp
+                itemName={'Homer Simpson'}
+                pic={'https://upload.wikimedia.org/wikipedia/en/0/02/Homer_Simpson_2006.png'}
+                description={'Homer Jay Simpson is a fictional character and one of the two main protagonists, alongside his son Bart, in the American animated sitcom The Simpsons.[1] He is voiced by Dan Castellaneta and first appeared, along with the rest of his family, in The Tracey Ullman Show short "Good Night" on April 19, 1987. Homer was created and designed by cartoonist Matt Groening while he was waiting in the lobby of producer James L. Brooks\'s office. Groening had been called to pitch a series of shorts based on his comic strip Life in Hell but instead decided to create a new set of characters. He named the character after his father, Homer Groening. After appearing for three seasons on The Tracey Ullman Show, the Simpson family got their own series on Fox, which debuted December 17, 1989. The show was later acquired by Disney in 2019.\n' +
+                    '\n' +
+                    'As the nominal foreman of the paternally eponymous family, Homer and his wife Marge have three children: Bart, Lisa and Maggie. As the family\'s provider, he works at the Springfield Nuclear Power Plant as safety inspector. Homer embodies many American working class stereotypes: he is obese, immature, outspoken, aggressive, balding, lazy, ignorant, unprofessional, and addicted to beer, junk food and watching television. However, he is fundamentally a good man and is staunchly protective of his family, especially when they need him the most. Despite the suburban blue-collar routine of his life, he has had a number of remarkable experiences, including going to space, climbing the tallest mountain in Springfield by himself, fighting former President George H. W. Bush, and winning a Grammy Award as a member of a barbershop quartet.\n' +
+                    '\n' +
+                    'In the shorts and earlier episodes, Castellaneta voiced Homer with a loose impression of Walter Matthau; however, during the second and third seasons of the half-hour show, Homer\'s voice evolved to become more robust, to allow the expression of a fuller range of emotions. He has appeared in other media relating to The Simpsons—including video games, The Simpsons Movie, The Simpsons Ride, commercials, and comic books—and inspired an entire line of merchandise. His signature catchphrase, the annoyed grunt "D\'oh!", has been included in The New Oxford Dictionary of English since 1998 and the Oxford English Dictionary since 2001.\n' +
+                    '\n' +
+                    'Homer is one of the most influential characters in the history of television, and is widely considered to be an American cultural icon. The British newspaper The Sunday Times described him as "The greatest comic creation of [modern] time". He was named the greatest character "of the last 20 years" in 2010 by Entertainment Weekly, was ranked the second-greatest cartoon character by TV Guide, behind Bugs Bunny, and was voted the greatest television character of all time by Channel 4 viewers. For voicing Homer, Castellaneta has won four Primetime Emmy Awards for Outstanding Voice-Over Performance and a special-achievement Annie Award. In 2000, Homer and his family were awarded a star on the Hollywood Walk of Fame.'}
+            />
+            <SimpsonComp
+                itemName={'Marge Simpson'}
+                pic={'https://upload.wikimedia.org/wikipedia/en/0/0b/Marge_Simpson.png'}
+                description={'Marjorie Jacqueline "Marge" Simpson[1] (née Bouvier) is a character in the American animated sitcom The Simpsons and part of the eponymous family. Voiced by Julie Kavner, she first appeared on television in The Tracey Ullman Show short "Good Night" on April 19, 1987. Marge was created and designed by cartoonist Matt Groening while he was waiting in the lobby of James L. Brooks\' office. Groening had been called to pitch a series of shorts based on Life in Hell but instead decided to create a new set of characters. He based the character on his mother Margaret Groening. After appearing on The Tracey Ullman Show for three seasons, the Simpson family received their own series on Fox, which debuted December 17, 1989.\n' +
+                    '\n' +
+                    'Marge is the matriarch of the Simpson family. With her husband Homer, she has three children: Bart, Lisa, and Maggie. Marge is the moralistic force in her family and often provides a grounding voice in the midst of her family\'s antics by trying to maintain order in the Simpson household. She is often portrayed as a stereotypical television mother and is often included on lists of top "TV moms". She has appeared in other media relating to The Simpsons—including video games, The Simpsons Movie, The Simpsons Ride, commercials, and comic books—and inspired an entire line of merchandise.\n' +
+                    '\n' +
+                    'Marge\'s distinctive blue beehive hairstyle was inspired by a combination of the Bride\'s in Bride of Frankenstein and the style that Margaret Groening wore in the 1960s. Julie Kavner, who was a member of the original cast of The Tracey Ullman Show, was asked to voice Marge so that more voice actors would not be needed. Kavner has won several awards for voicing Marge, including a Primetime Emmy Award for Outstanding Voice-Over Performance in 1992. She was also nominated for an Annie Award for Best Voice Acting in an Animated Feature for her performance in The Simpsons Movie. In 2000, Marge, along with the rest of her family, was awarded a star on the Hollywood Walk of Fame.'}
+            />
+            <SimpsonComp
+                itemName={'Bart Simpson'}
+                pic={'https://upload.wikimedia.org/wikipedia/en/a/aa/Bart_Simpson_200px.png'}
+                description={'Bartholomew JoJo "Bart" Simpson[1] is a fictional character and one of the two main protagonists, alongside his father Homer, in the American animated television series The Simpsons and part of the Simpson family.[2] He is voiced by Nancy Cartwright and first appeared on television in The Tracey Ullman Show short "Good Night" on April 19, 1987. Cartoonist Matt Groening created and designed Bart while waiting in the lobby of James L. Brooks\' office. Groening had been called to pitch a series of shorts based on his comic strip, Life in Hell, but instead decided to create a new set of characters. While the rest of the characters were named after Groening\'s family members, Bart\'s name is an anagram of the word brat. After appearing on The Tracey Ullman Show for two years, the Simpson family received its own series on Fox, which debuted December 17, 1989. Bart has appeared in every Simpsons episode except "Four Great Women and a Manicure".\n' +
+                    '\n' +
+                    'At ten years old, Bart is the eldest child and only son of Homer and Marge, and the brother of Lisa and Maggie. Bart\'s most prominent and popular character traits are his mischievousness, rebelliousness and disrespect for authority. Hallmarks of the character include his chalkboard gags in the opening sequence; his prank calls to Moe; and his catchphrases "Eat my shorts", "¡Ay, caramba!", "Don\'t have a cow, man!", and "I\'m Bart Simpson. Who the hell are you?". However, with the exception of "Ay, caramba!", these hallmarks have been retired or are not often used. Bart has appeared in other media relating to The Simpsons – including video games, The Simpsons Movie, The Simpsons Ride, commercials, and comic books – and inspired an entire line of merchandise.\n' +
+                    '\n' +
+                    'In casting, Cartwright originally planned to audition for the role of Lisa, while Yeardley Smith tried out for Bart. Smith\'s voice was considered too high for a boy, so she was given the role of Lisa. Cartwright found Lisa uninteresting, so she instead auditioned for Bart, which she thought was a better role.[3]\n' +
+                    '\n' +
+                    'During the first two seasons of The Simpsons, Bart was the show\'s breakout character and "Bartmania" ensued, spawning Bart Simpson-themed merchandise touting his rebellious attitude and pride at underachieving, which caused many parents and educators to cast him as a bad role model for children. Around the third season, the series started to focus more on the family as a whole, though Bart still remains a prominent character. Time named Bart one of the 100 most important people of the 20th century, and he was named "entertainer of the year" in 1990 by Entertainment Weekly. Cartwright has won several awards for voicing Bart, including a Primetime Emmy Award in 1992 and an Annie Award in 1995. In 2000, Bart, along with the rest of his family, was awarded a star on the Hollywood Walk of Fame.'}
+            />
+            <SimpsonComp
+                itemName={'Lisa Simpson'}
+                pic={'https://upload.wikimedia.org/wikipedia/en/e/ec/Lisa_Simpson.png'}
+                description={'Lisa Marie Simpson[1] is a fictional character in the animated television series The Simpsons. She is the middle child and most accomplished of the Simpson family. Voiced by Yeardley Smith, Lisa was born as a character in The Tracey Ullman Show short "Good Night" on April 19, 1987. Cartoonist Matt Groening created and designed her while waiting to meet James L. Brooks. Groening had been invited to pitch a series of shorts based on his comic Life in Hell, but instead decided to create a new set of characters. He named the elder Simpson daughter after his younger sister Lisa Groening Bartlett. After appearing on The Tracey Ullman Show for three years, the Simpson family were moved to their own series on Fox, which debuted on December 17, 1989.\n' +
+                    '\n' +
+                    'Intelligent, kind and passionate about the planet and all living things, Lisa Simpson, at eight years old, is the second child of Homer and Marge, the younger sister of Bart, and the older sister of Maggie. Lisa\'s high intellect and left-wing political stance creates a barrier between her and other children her age; therefore she is a bit of a loner and social outcast. Lisa is a vegetarian, a strong environmentalist, a feminist, and a Buddhist. Lisa\'s character develops many times over the course of the show: she becomes a vegetarian in season 7 and converts to Buddhism in season 13. A strong liberal and activist for peace, equality and the environment, Lisa advocates for a variety of political causes (e.g. standing with the Tibetan independence movement) which usually sets her against most of the people in Springfield. However, she can also be somewhat intolerant of opinions that differ from her own, often refusing to consider alternative perspectives and showing a feeling of self-righteousness. In her free time, Lisa enjoys many hobbies such as reading and playing the baritone saxophone, despite her father\'s annoyance regarding the latter. She has appeared in other media relating to The Simpsons – including video games, The Simpsons Movie, The Simpsons Ride, commercials and comic books – and inspired a line of merchandise.\n' +
+                    '\n' +
+                    'Yeardley Smith originally tried out for the role of Bart, while Nancy Cartwright (who was later cast as the voice for Bart) tried out for Lisa. Producers considered Smith\'s voice too high for a boy, so she was given the role of Lisa. In the Tracey Ullman Show shorts, Lisa was something of a "female Bart" who mirrored her brother\'s mischief, but as the series progressed she became a liberal voice of reason which has drawn both praise and criticism from fans of the show. Because of her unusual pointed hairstyle, many animators consider Lisa the most difficult Simpsons character to draw.\n' +
+                    '\n' +
+                    'TV Guide ranked her 11th (tied with Bart) on their list of the "Top 50 Greatest Cartoon Characters of All Time". Her environmentalism has been especially well-received; several episodes featuring her have won Genesis and Environmental Media Awards, including a special "board of directors Ongoing Commitment Award" in 2001. People for the Ethical Treatment of Animals included Lisa on their list of the "Most Animal-Friendly TV Characters of All Time". Yeardley Smith won a Primetime Emmy Award for Outstanding Voice-Over Performance in 1992 and Lisa and her family were awarded a star on the Hollywood Walk of Fame in 2000.'}
+            />
+            <SimpsonComp
+                itemName={'Maggie Simpson'}
+                pic={'https://upload.wikimedia.org/wikipedia/en/9/9d/Maggie_Simpson.png'}
+                description={'Margaret Evelyn Lenny "Maggie" Simpson[1][2] is a fictional character in the animated television series The Simpsons and a part of the Simpson family, notably the youngest member. She first appeared on television in the Tracey Ullman Show short "Good Night" on April 19, 1987. Maggie was created and designed by cartoonist Matt Groening while he was waiting in the lobby of James L. Brooks\' office. She received her first name from Groening\'s youngest sister. After appearing on The Tracey Ullman Show for three years, the Simpson family was given their own series on the Fox Broadcasting Company which debuted December 17, 1989.\n' +
+                    '\n' +
+                    'Maggie is the youngest child of Homer and Marge, and the younger sister to Bart and Lisa. She is often seen sucking on her orange pacifier and, when she walks, she trips over her clothing and falls on her face (this running gag is used much more in earlier seasons). Being an infant, she has not yet learned how to talk. However, she did appear to talk in the first Tracey Ullman Show short.\n' +
+                    '\n' +
+                    'Though she rarely talks, she frequently makes a characteristic sucking noise with her pacifier, which has become synonymous with the character. Her pacifier sucking noises are provided by the show\'s creator, Matt Groening, and early producer Gábor Csupó. Maggie\'s occasional speaking parts and other vocalizations are currently provided by Nancy Cartwright, but she has also been voiced by guest stars Carol Kane, James Earl Jones, Elizabeth Taylor and Jodie Foster, and by series regulars Yeardley Smith and Harry Shearer. Maggie has appeared in various media relating to The Simpsons – including video games, The Simpsons Movie, The Simpsons Ride, commercials and comic books – and has inspired an entire line of merchandise.'}
+            />
+        </div>
+    );
 }
 
 export default App;
