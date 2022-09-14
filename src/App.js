@@ -1,7 +1,6 @@
 import './App.css';
 import SimpsonComp from "./components/simpsonComp";
 
-
 function App() {
     return (
         <div className="App">
