@@ -1,5 +1,7 @@
 import User from "../user/User";
 import {useEffect, useState} from "react";
+import './UsersStyle.css';
+import {getUsersAxios} from "../../services/user.api.axios.service";
 
 
 function Users() {
@@ -11,12 +13,8 @@ function Users() {
     }
 
     useEffect(() => {
-        fetch('https://jsonplaceholder.typicode.com/users')
-            .then(value => value.json())
-            .then(value => {
-                setUsers(value)
-            })
-    })
+       getUsersAxios().then(value => setUsers(value.data))
+    },[])
 
     return (
         <div>

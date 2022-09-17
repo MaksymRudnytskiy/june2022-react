@@ -1,4 +1,4 @@
-
+import './UserStyle.css';
 function User({user,lift}) {
 
   return (
@@ -7,9 +7,12 @@ function User({user,lift}) {
       <p>ID: {user.id}</p>
       <button onClick={()=>{
           lift(user)
+
       }}>User details</button>
     </div>
   );
 }
+
+
 
 export default User;
