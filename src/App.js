@@ -2,10 +2,15 @@ import './App.css';
 import {Link, Route, Routes} from "react-router-dom";
 import Todos from "./components/todos/Todos";
 import Albums from "./components/albums/Albums";
+import Home from "./components/home/Home";
+import Comments from "./components/comments/Comments";
 
 function App() {
     return (
         <div className="App">
+            <div>
+                <Link to={'/'}>Home</Link>
+            </div>
             <div>
                 <Link to={'/todos'}>Todos</Link>
             </div>
@@ -19,8 +24,12 @@ function App() {
             <hr/>
 
             <Routes>
+                <Route path={'/'} element={<Home/>}/>
                 <Route path={'todos'} element={<Todos/>}/>
                 <Route path={'albums'} element={<Albums/>}/>
+                <Route path={'comments'} element={<Comments/>}>
+
+                </Route>
             </Routes>
         </div>
     );

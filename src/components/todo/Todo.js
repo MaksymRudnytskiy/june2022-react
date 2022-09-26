@@ -6,6 +6,7 @@ function Todo({todo}) {
             <p>title: {todo.title}</p>
             {/*<p>completed: {todo.completed}</p>*/}
             <br/>
+            <hr/>
         </div>
     );
 }

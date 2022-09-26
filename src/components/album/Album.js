@@ -5,6 +5,7 @@ function Album({album}) {
             <p>id: {album.id}</p>
             <p>title: {album.title}</p>
             <br/>
+            <hr/>
         </div>
     );
 }
