@@ -1,3 +1,5 @@
+import {Link, Outlet} from "react-router-dom";
+
 function Comment({comment}) {
     return (
         <div>
@@ -6,6 +8,10 @@ function Comment({comment}) {
             <p>name: {comment.name}</p>
             <p>email: {comment.email}</p>
             <p>body: {comment.body}</p>
+            <div>
+                <span><Link to={comment.postId.toString()}>Posts</Link></span>
+            </div>
+            <div><Outlet/></div>
             <br/>
             <hr/>
         </div>
